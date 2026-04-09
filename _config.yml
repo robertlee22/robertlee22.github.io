@@ -125,7 +125,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # true: hide RSS link in footer (feed.xml still generated)
   path                   : # blank (default) uses feed.xml
 
 
@@ -247,7 +247,7 @@ defaults:
       read_time: true
       comments: true
       share: false
-      related: true
+      related: false
   # _pages
   - scope:
       path: ""
