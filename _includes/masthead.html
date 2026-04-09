@@ -17,7 +17,11 @@
               {% assign domain = base_path %}
             {% endif %}
             {% assign masthead_nav_selected = false %}
-            {% if link.url != '/' and page.url contains link.url %}
+            {% if link.url == '/' %}
+              {% if page.url == '/' or page.url == '/index.html' %}
+                {% assign masthead_nav_selected = true %}
+              {% endif %}
+            {% elsif link.url != '/' and page.url contains link.url %}
               {% assign masthead_nav_selected = true %}
             {% elsif site.show_masthead_title == false and forloop.first %}
               {% if page.url == '/' or page.url == '/index.html' %}
