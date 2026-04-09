@@ -9,6 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+show_masthead_title      : false # set false to hide site title link in top nav (site.title still used for SEO, RSS, etc.)
 title                    : "Robert Lee / Blog"
 title_separator          : "-"
 name                     : &name "Robert Lee"
