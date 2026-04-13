@@ -4,8 +4,6 @@ date: 2026-04-13 09:00:00 +0800
 published: true
 ---
 
-# 从用法到 CUDA kernel：PyTorch LayerNorm 是怎么跑起来的
-
 最近在学 CUDA，想找一个真实的工程案例来练手。LayerNorm 挺合适的——它在 Transformer 里几乎无处不在，数学不复杂，但 GPU 上的实现藏着不少值得思考的东西。
 
 这篇文章记录了我从"知道 LayerNorm 是什么"到"看懂 PyTorch 底层 kernel"的过程，希望对同样在入门 CUDA 的朋友有用。
